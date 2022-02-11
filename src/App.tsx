@@ -44,7 +44,7 @@ import {
 import './App.css'
 
 function App() {
-  const profilePic = require('../public/IMG-4142.jpeg');
+  const profilePic = require('profile-pic.jpeg');
   
   const prefersDarkMode = window.matchMedia(
     '(prefers-color-scheme: dark)'
