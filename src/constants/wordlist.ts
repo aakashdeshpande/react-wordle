@@ -3,5 +3,6 @@ export const WORDS = [
   'jaanu',
   'pyaar',
   'couch',
-  'music'
+  'music',
+  'lovey'
 ]
