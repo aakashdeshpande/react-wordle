@@ -44,6 +44,8 @@ import {
 import './App.css'
 
 function App() {
+  const profilePic = require('../public/IMG-4142.jpeg');
+  
   const prefersDarkMode = window.matchMedia(
     '(prefers-color-scheme: dark)'
   ).matches
@@ -209,6 +211,7 @@ function App() {
 
   return (
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <img alt='profile' style={{ width: 100 }} src={String(profilePic)} />
       <div className="flex w-80 mx-auto items-center mb-8 mt-20">
         <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
           {GAME_TITLE}
