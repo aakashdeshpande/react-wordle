@@ -8,8 +8,9 @@ type Props = {
 export const AboutModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="About" isOpen={isOpen} handleClose={handleClose}>
+      <img alt='profile' style={{ width: 100 }} src={String(require('../../profile-pic.jpeg'))} />
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
+        This is alove letter from a Churro to a Peligrosa, forked from an open source version of the word guessing game we all know and
         love -{' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
