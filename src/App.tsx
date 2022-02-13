@@ -126,6 +126,13 @@ function App() {
         setTimeout(() => {
           setSuccessAlert('')
           if (solution === 'MARRY') {
+            setIsRevealing(true)
+            // turn this back off after all
+            // chars have been revealed
+            setTimeout(() => {
+              setIsRevealing(false)
+            }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
+            
             setIsProposalModalOpen(true)
           } else {  
             setIsStatsModalOpen(true)
