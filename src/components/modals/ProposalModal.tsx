@@ -22,6 +22,7 @@ type Props = {
   isGameWon: boolean
   handleShare: () => void
   isHardMode: boolean
+  isRevealing?: boolean
 }
 
 export const ProposalModal = ({
@@ -33,6 +34,7 @@ export const ProposalModal = ({
   isGameWon,
   handleShare,
   isHardMode,
+  isRevealing
 }: Props) => {
   return (
     <BaseModal
