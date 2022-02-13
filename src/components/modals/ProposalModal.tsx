@@ -1,17 +1,7 @@
 import Countdown from 'react-countdown'
 import { Cell} from '../grid/Cell'
-import { StatBar } from '../stats/StatBar'
-import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
-import { shareStatus } from '../../lib/share'
-import { tomorrow } from '../../lib/words'
 import { BaseModal } from './BaseModal'
-import {
-  STATISTICS_TITLE,
-  GUESS_DISTRIBUTION_TEXT,
-  NEW_WORD_TEXT,
-  SHARE_TEXT,
-} from '../../constants/strings'
 
 type Props = {
   isOpen: boolean
