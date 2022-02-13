@@ -8,9 +8,6 @@ type Props = {
 export const AboutModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="About" isOpen={isOpen} handleClose={handleClose}>
-      <div className="flex w-80 mx-auto items-center mb-8 mt-20">
-        <img alt='profile' style={{ width: 100 }} src={String(require('../../profile-pic.jpeg'))} />
-      </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         This is alove letter from a Churro to a Peligrosa, forked from an open source version of the word guessing game we all know and
         love -{' '}
