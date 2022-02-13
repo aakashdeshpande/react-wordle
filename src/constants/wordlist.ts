@@ -1,8 +1,10 @@
 export const WORDS = [
-  'marry',
+  'marry' 
+  /*,
   'jaanu',
   'pyaar',
   'couch',
   'music',
   'lovey'
+  */
 ]
