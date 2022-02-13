@@ -53,7 +53,8 @@ function App() {
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
   const [isNotEnoughLetters, setIsNotEnoughLetters] = useState(false)
-  const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
+    const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
+  const [isProposalModalOpen, setIsProposalModalOpen] = useState(false)
   const [isWordNotFoundAlertOpen, setIsWordNotFoundAlertOpen] = useState(false)
   const [isGameLost, setIsGameLost] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(
@@ -123,7 +124,11 @@ function App() {
 
         setTimeout(() => {
           setSuccessAlert('')
-          setIsStatsModalOpen(true)
+          if (solution == 'marry') {
+            setIsProposalModalOpen(true)
+          } else {  
+            setIsStatsModalOpen(true)
+          }
         }, ALERT_TIME_MS)
       }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
     }
@@ -272,6 +277,20 @@ function App() {
           return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
         }}
         isHardMode={isHardMode}
+      />
+      <ProposalModal
+        isOpen={isProposalModalOpen}
+        handleClose={() => setIsProposalModalOpen(false)}
+        guesses={guesses}
+        gameStats={stats}
+        isGameLost={isGameLost}
+        isGameWon={isGameWon}
+        handleShare={() => {
+          setSuccessAlert(GAME_COPIED_MESSAGE)
+          return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
+        }}
+        isHardMode={isHardMode}
+        isRevealing={isRevealing}
       />
       <AboutModal
         isOpen={isAboutModalOpen}
