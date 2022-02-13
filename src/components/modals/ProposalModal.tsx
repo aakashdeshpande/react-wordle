@@ -36,7 +36,7 @@ export const ProposalModal = ({
 }: Props) => {
   return (
     <BaseModal
-      title={STATISTICS_TITLE}
+      title={'Sneak Attack'}
       isOpen={isOpen}
       handleClose={handleClose}
     >
