@@ -23,8 +23,7 @@ export const ProposalModal = ({
   isGameLost,
   isGameWon,
   handleShare,
-  isHardMode,
-  isRevealing
+  isHardMode
 }: Props) => {
   return (
     <BaseModal
@@ -39,7 +38,7 @@ export const ProposalModal = ({
             value={letter}
             status={'correct'}
             position={i}
-            isRevealing={isRevealing}
+            isRevealing={true}
             isCompleted
           />
         ))}
@@ -51,7 +50,7 @@ export const ProposalModal = ({
             value={letter}
             status={'present'}
             position={i}
-            isRevealing={isRevealing}
+            isRevealing={true}
             isCompleted
           />
         ))}
