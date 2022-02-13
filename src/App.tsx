@@ -125,7 +125,7 @@ function App() {
 
         setTimeout(() => {
           setSuccessAlert('')
-          if (solution == 'marry') {
+          if (solution === 'MARRY') {
             setIsProposalModalOpen(true)
           } else {  
             setIsStatsModalOpen(true)
