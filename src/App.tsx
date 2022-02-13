@@ -292,7 +292,6 @@ function App() {
           return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
         }}
         isHardMode={isHardMode}
-        isRevealing={isRevealing}
       />
       <AboutModal
         isOpen={isAboutModalOpen}
