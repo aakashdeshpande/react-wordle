@@ -13,6 +13,7 @@ import { Keyboard } from './components/keyboard/Keyboard'
 import { AboutModal } from './components/modals/AboutModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
+import { ProposalModal } from './components/modals/ProposalModal'
 import {
   GAME_TITLE,
   WIN_MESSAGES,
