@@ -72,7 +72,7 @@ export const ProposalModal = ({
             <h5>{'Marriage proposal in'}</h5>
             <Countdown 
               className="text-lg font-medium text-gray-900 dark:text-gray-100"
-              date={today}
+              date={Date.now()}
               daysInHours={true}
             />
           </div>
