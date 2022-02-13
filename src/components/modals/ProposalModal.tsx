@@ -37,7 +37,7 @@ export const ProposalModal = ({
           <Cell
             key={i}
             value={letter}
-            status={'present'}
+            status={'correct'}
             position={i}
             isRevealing={isRevealing}
             isCompleted
